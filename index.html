@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pythagoras for Beginners</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main page container -->
+    <div class="page">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Math for Junior Cycle</p>
+          <h1>Pythagoras</h1>
+          <p class="subtitle">
+            Learn the formula, try a worked example, and test yourself with a 5-question quiz.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <!-- Simple explanation section -->
+        <section class="card">
+          <h2>What is Pythagoras?</h2>
+          <p>
+            Pythagoras was a Greek mathematician. His big idea was that in a right-angled triangle,
+            the squares of the two shorter sides add up to the square of the longest side.
+          </p>
+          <p>
+            The longest side is called the <strong>hypotenuse</strong>, and it is always opposite the
+            right angle.
+          </p>
+        </section>
+
+        <!-- Formula section -->
+        <section class="card formula-card">
+          <h2>The formula</h2>
+          <div class="formula-box">
+            <span>a² + b² = c²</span>
+          </div>
+          <ul class="key-list">
+            <li><strong>a</strong> and <strong>b</strong> are the two shorter sides</li>
+            <li><strong>c</strong> is the hypotenuse</li>
+            <li>Use this when the triangle has a right angle</li>
+          </ul>
+        </section>
+
+        <!-- Worked example -->
+        <section class="card">
+          <h2>Worked example</h2>
+          <p>A right-angled triangle has sides 3 cm and 4 cm. What is the length of the hypotenuse?</p>
+
+          <div class="example-steps">
+            <p><strong>Step 1:</strong> Use the formula: a² + b² = c²</p>
+            <p><strong>Step 2:</strong> Put in the values: 3² + 4² = c²</p>
+            <p><strong>Step 3:</strong> Work out the squares: 9 + 16 = c²</p>
+            <p><strong>Step 4:</strong> Add them: 25 = c²</p>
+            <p><strong>Step 5:</strong> Find the square root: c = 5</p>
+          </div>
+
+          <p class="answer-highlight">So the hypotenuse is <strong>5 cm</strong>.</p>
+        </section>
+
+        <!-- Common mistakes -->
+        <section class="card">
+          <h2>Common mistakes</h2>
+          <ul class="mistake-list">
+            <li>Forgetting that <strong>c</strong> is the longest side</li>
+            <li>Using the wrong sides in the formula</li>
+            <li>Forgetting to square the numbers before adding</li>
+            <li>Not taking the square root at the end</li>
+          </ul>
+        </section>
+
+        <!-- Practice area -->
+        <section class="card">
+          <h2>Quick practice</h2>
+          <div class="practice-grid">
+            <div class="practice-box">
+              <p>1. If a = 5 and b = 12, then c = ?</p>
+              <span>Answer: 13</span>
+            </div>
+            <div class="practice-box">
+              <p>2. If a = 6 and b = 8, then c = ?</p>
+              <span>Answer: 10</span>
+            </div>
+            <div class="practice-box">
+              <p>3. If a = 7 and b = 24, then c = ?</p>
+              <span>Answer: 25</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz section -->
+        <section class="card quiz-card">
+          <h2>5-question quiz</h2>
+          <div id="quiz"></div>
+          <button id="reset-btn" class="reset-btn" type="button">Try again</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
