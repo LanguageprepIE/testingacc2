@@ -1,0 +1,260 @@
+:root {
+  --bg: #f5f7ff;
+  --card: #ffffff;
+  --primary: #5b6cff;
+  --secondary: #ffb84d;
+  --accent: #2ec4b6;
+  --text: #1f2a44;
+  --muted: #58657a;
+  --danger: #ff5d73;
+  --success: #2bb673;
+  --shadow: 0 12px 30px rgba(91, 108, 255, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #eef3ff 0%, #f9fbff 100%);
+  color: var(--text);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), #7d8cff);
+  color: white;
+  border-radius: 24px;
+  padding: 32px 24px;
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  max-width: 620px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.card p,
+.card li {
+  font-size: 1.03rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.formula-card {
+  background: linear-gradient(135deg, #fffaf0 0%, #fff 100%);
+}
+
+.formula-box {
+  background: #f5f6ff;
+  border-left: 5px solid var(--secondary);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 18px 0;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+}
+
+.key-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.example-steps {
+  background: #f8fbff;
+  border: 1px solid #dfe8ff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-top: 14px;
+}
+
+.example-steps p {
+  margin: 8px 0;
+}
+
+.answer-highlight {
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #effff8;
+  border-left: 5px solid var(--accent);
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.mistake-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.practice-box {
+  background: #f5f7ff;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #e4e9ff;
+}
+
+.practice-box p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.practice-box span {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.quiz-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7ff 100%);
+}
+
+.quiz-item {
+  background: white;
+  border: 1px solid #e5eaf7;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.quiz-question {
+  margin: 0 0 12px;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.option-btn {
+  border: 1px solid #d8dff9;
+  background: #f8f9ff;
+  color: var(--text);
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  border-color: var(--primary);
+  background: #eef2ff;
+}
+
+.option-btn.correct {
+  background: #eafaf2;
+  border-color: var(--success);
+  color: #0d6039;
+}
+
+.option-btn.incorrect {
+  background: #fff0f2;
+  border-color: var(--danger);
+  color: #8f1f35;
+}
+
+.feedback {
+  margin-top: 12px;
+  font-weight: 700;
+  min-height: 24px;
+}
+
+.feedback.correct {
+  color: var(--success);
+}
+
+.feedback.incorrect {
+  color: var(--danger);
+}
+
+.quiz-score {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+.reset-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.reset-btn:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 16px 12px 40px;
+  }
+
+  .hero {
+    padding: 24px 18px;
+  }
+
+  .card {
+    padding: 18px 16px;
+  }
+
+  .option-btn {
+    padding: 11px 12px;
+  }
+}
